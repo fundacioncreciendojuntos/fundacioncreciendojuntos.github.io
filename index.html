@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundación Creciendo Juntos | Corazón y Saber</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBlue: '#00adef',
+                        brandGreen: '#8cc63f',
+                        brandDark: '#007bb5'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Estilo para que las secciones aparezcan suavemente al navegar */
+        section { scroll-margin-top: 100px; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- NAVEGACIÓN -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <!-- LOGO SIN BORDE -->
+                <div class="h-20 w-20 md:h-24 md:w-24 bg-white rounded-full flex items-center justify-center overflow-hidden shadow-lg flex-shrink-0 relative transition transform hover:scale-105">
+                    <img src="./231707.jpeg" alt="Logo Fundación Creciendo Juntos" class="h-full w-full object-cover relative z-10" onerror="this.style.display='none'">
+                    <!-- Icono de respaldo si la imagen no carga -->
+                    <i class="fas fa-graduation-cap text-brandBlue text-3xl absolute z-0"></i>
+                </div>
+                
+                <!-- TÍTULO HORIZONTAL -->
+                <h1 class="text-lg sm:text-xl md:text-3xl font-extrabold tracking-tight uppercase">
+                    <span class="text-brandBlue">FUNDACIÓN</span> <span class="text-brandGreen">CRECIENDO JUNTOS</span>
+                </h1>
+            </div>
+            
+            <!-- Menú Escritorio -->
+            <div class="hidden md:flex space-x-6 font-semibold text-gray-600">
+                <a href="#quienes-somos" class="hover:text-brandBlue transition duration-300">Quiénes Somos</a>
+                <a href="#servicios" class="hover:text-brandBlue transition duration-300">Lo Que Hacemos</a>
+                <a href="#contacto" class="hover:text-brandBlue transition duration-300">Contacto</a>
+            </div>
+
+            <!-- Botón WhatsApp -->
+            <a href="https://wa.me/573187477904" target="_blank" class="hidden lg:flex bg-brandGreen text-white px-6 py-2 rounded-full font-bold hover:bg-green-600 transition shadow-md items-center text-base flex-shrink-0">
+                <i class="fab fa-whatsapp text-xl mr-2"></i> Agendar Visita
+            </a>
+            <!-- Botón WhatsApp Móvil (Sólo Icono) -->
+            <a href="https://wa.me/573187477904" target="_blank" class="flex lg:hidden bg-brandGreen text-white p-3 rounded-full font-bold hover:bg-green-600 transition shadow-md items-center text-xl flex-shrink-0 ml-2">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="relative bg-brandBlue py-16 md:py-24 text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/diagmonds-light.png')]"></div>
+        
+        <!-- Círculos decorativos de fondo -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-brandGreen opacity-20 rounded-full"></div>
+        
+        <div class="max-w-6xl mx-auto px-4 relative z-10 flex flex-col md:row items-center md:flex-row">
+            <div class="md:w-3/5 mb-10 md:mb-0 pr-0 md:pr-10 text-center md:text-left">
+                <span class="inline-block py-1 px-3 rounded-full bg-brandGreen text-white text-sm font-bold mb-4 shadow-sm uppercase tracking-wide">Corazón y Saber</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6 drop-shadow-md">Mente preparada, corazón contento.</h2>
+                <p class="text-xl opacity-95 mb-8 font-light italic">"Mucho más que refuerzo escolar: un lugar para ser y aprender."</p>
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contacto" class="bg-brandGreen text-white px-8 py-3 rounded-full font-bold hover:bg-green-600 transition shadow-lg text-center text-lg">Contáctanos</a>
+                    <a href="#quienes-somos" class="border-2 border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-brandBlue transition text-center text-lg">Conocer más</a>
+                </div>
+            </div>
+            <div class="md:w-2/5 flex justify-center">
+                <div class="w-64 h-64 md:w-80 md:h-80 rounded-2xl border-8 border-white/30 overflow-hidden shadow-2xl relative rotate-3 hover:rotate-0 transition duration-500">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Educación y emoción" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-brandBlue opacity-10"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- BARRA DE VALORES -->
+    <section class="bg-brandGreen py-8 text-white text-center shadow-inner relative z-20">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6 font-medium text-lg">
+            <div class="flex items-center justify-center"><i class="fas fa-check-circle mr-2 opacity-80"></i> Tareas fáciles y sin estrés</div>
+            <div class="flex items-center justify-center"><i class="fas fa-heart mr-2 opacity-80"></i> Emociones fortalecidas</div>
+            <div class="flex items-center justify-center"><i class="fas fa-star mr-2 opacity-80"></i> Bienestar integral</div>
+        </div>
+    </section>
+
+    <!-- QUIÉNES SOMOS -->
+    <section id="quienes-somos" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h3 class="text-3xl md:text-4xl font-extrabold mb-8 text-brandDark">¿Quiénes somos?</h3>
+            <p class="text-xl text-gray-600 mb-12 leading-relaxed max-w-4xl mx-auto">
+                Somos una red de apoyo integral diseñada para acompañar a familias en el proceso educativo. Entendemos el ritmo de vida actual; por eso, somos el aliado que garantiza un acompañamiento experto en tareas y gestión emocional.
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-10 text-left">
+                <div class="bg-blue-50 p-8 rounded-2xl border-t-4 border-brandBlue shadow-md hover:shadow-xl transition duration-300">
+                    <div class="w-14 h-14 bg-brandBlue text-white rounded-full flex items-center justify-center text-2xl mb-6 shadow-md">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h4 class="font-extrabold text-2xl mb-4 text-brandDark">Nuestra Misión</h4>
+                    <p class="text-gray-700 text-lg leading-snug">Brindamos acompañamiento en deberes escolares y fortalecimiento emocional para que el tiempo en casa de las familias trabajadoras se dedique exclusivamente al afecto.</p>
+                </div>
+                <div class="bg-green-50 p-8 rounded-2xl border-t-4 border-brandGreen shadow-md hover:shadow-xl transition duration-300">
+                    <div class="w-14 h-14 bg-brandGreen text-white rounded-full flex items-center justify-center text-2xl mb-6 shadow-md">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h4 class="font-extrabold text-2xl mb-4 text-green-800">Nuestra Visión 2030</h4>
+                    <p class="text-gray-700 text-lg leading-snug">Ser la red líder en transformación educativa y familiar, referentes en autonomía y bienestar emocional mediante nuestra metodología 'Corazón y Saber'.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl md:text-4xl font-extrabold text-brandDark mb-4">Lo Que Hacemos Por Ti</h3>
+                <div class="w-24 h-1 bg-brandGreen mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md hover:-translate-y-2 transition duration-300 text-center border border-gray-100 group">
+                    <div class="w-20 h-20 bg-blue-50 group-hover:bg-brandBlue rounded-full flex items-center justify-center mx-auto mb-6 transition duration-300">
+                        <i class="fas fa-home text-3xl text-brandBlue group-hover:text-white transition duration-300"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4 text-gray-800">Visitas en casa</h4>
+                    <p class="text-gray-600">Vamos a donde nos necesites, eliminando el estrés de traslados para la familia.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:-translate-y-2 transition duration-300 text-center border-2 border-brandGreen group relative transform scale-105 z-10">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-brandGreen text-white text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider">Destacado</div>
+                    <div class="w-20 h-20 bg-green-50 group-hover:bg-brandGreen rounded-full flex items-center justify-center mx-auto mb-6 transition duration-300">
+                        <i class="fas fa-user-graduate text-3xl text-brandGreen group-hover:text-white transition duration-300"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4 text-gray-800">Atención 1 a 1</h4>
+                    <p class="text-gray-600">Cada niño es único. Personalizamos el aprendizaje y la gestión de atención a su ritmo.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md hover:-translate-y-2 transition duration-300 text-center border border-gray-100 group">
+                    <div class="w-20 h-20 bg-blue-50 group-hover:bg-brandBlue rounded-full flex items-center justify-center mx-auto mb-6 transition duration-300">
+                        <i class="fas fa-shield-alt text-3xl text-brandBlue group-hover:text-white transition duration-300"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4 text-gray-800">Seguridad</h4>
+                    <p class="text-gray-600">Aprendizaje efectivo en la comodidad, privacidad y resguardo de tu propio hogar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contacto" class="bg-gray-900 text-white pt-16 pb-8 border-t-8 border-brandGreen">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-12 text-center md:text-left mb-12">
+                
+                <div>
+                    <h3 class="text-2xl font-extrabold text-brandBlue mb-4">Creciendo <span class="text-brandGreen">Juntos</span></h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">El compromiso que marca la diferencia. Unidos por el futuro de quienes más amas.</p>
+                </div>
+
+                <div class="flex flex-col items-center md:items-start">
+                    <h4 class="text-lg font-bold mb-4 uppercase tracking-wider text-gray-300">Síguenos</h4>
+                    <div class="space-y-3">
+                        <a href="https://instagram.com/fundacioncreciendojuntos26" target="_blank" class="flex items-center text-gray-400 hover:text-pink-500 transition">
+                            <i class="fab fa-instagram text-xl w-8"></i> @fundacioncreciendojuntos26
+                        </a>
+                        <a href="https://facebook.com/fundacioncreciendojuntos" target="_blank" class="flex items-center text-gray-400 hover:text-blue-500 transition">
+                            <i class="fab fa-facebook text-xl w-8"></i> Fundación Creciendo Juntos
+                        </a>
+                        <a href="https://tiktok.com/@Fcreciendojuntos-26" target="_blank" class="flex items-center text-gray-400 hover:text-white transition">
+                            <i class="fab fa-tiktok text-xl w-8"></i> @Fcreciendojuntos-26
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center md:items-start">
+                    <h4 class="text-lg font-bold mb-4 uppercase tracking-wider text-gray-300">Contacto Directo</h4>
+                    <p class="text-gray-400 mb-4">Pregunta por nuestros planes mensuales.</p>
+                    <a href="https://wa.me/573187477904" target="_blank" class="inline-flex items-center bg-green-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-600 transition shadow-lg transform hover:scale-105">
+                        <i class="fab fa-whatsapp text-2xl mr-3"></i> 318 747 7904
+                    </a>
+                </div>
+
+            </div>
+            
+            <hr class="border-gray-800 mb-8">
+            <div class="text-center text-gray-500 text-sm">
+                <p>&copy; 2026 Fundación Creciendo Juntos. Cali, Colombia. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
